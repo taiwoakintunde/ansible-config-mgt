@@ -10,6 +10,20 @@
         name: wireshark
         state: latest
 
+    - name: Create a new directory named New-Dir
+      file:
+       path: ~/New-Dir
+       state: directory
+
+    - name: Create a file named new-file
+      file:
+       path: ~/New-Dir/new-file
+       state: touch
+
+    - name: set timezone to Asia/Tokyo
+      timezone:
+        name: Asia/Tokyo
+
 - name: update LB server
   hosts: lb
   remote_user: ubuntu
@@ -24,3 +38,4 @@
       apt:
         name: wireshark
         state: latest
+  
