@@ -61,7 +61,7 @@ apache_restart_state: restarted
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
 
-enable_nginx_lb: false
+enable_apache_lb: false
 load_balancer_is_required: false
 
 # Webservers
