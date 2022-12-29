@@ -1,5 +1,7 @@
 ---
-- name: restart apache
+- name: Restart apache2 service
+  become_method: sudo
+  become: yes
   service:
-    name: "{{ apache_service }}"
-    state: "{{ apache_restart_state }}"
+    name: apache2
+    state: restarted
