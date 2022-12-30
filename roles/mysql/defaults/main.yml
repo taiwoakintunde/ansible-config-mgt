@@ -107,10 +107,10 @@ mysql_config_include_files: []
 
 # Databases.
 mysql_databases: []
-   - name: tooling
-#     collation: utf8_general_ci
-#     encoding: utf8
-#     replicate: 1
+  - name: tooling
+    collation: utf8_general_ci
+    encoding: utf8
+    replicate: 1
 
 # Users.
 mysql_users: []
